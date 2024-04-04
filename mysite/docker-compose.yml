@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8999
+    ports:
+      - "8999:8999"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    environment:
+      - DJANGO_SETTINGS_MODULE=mysite.settings.dev
+
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=myproject
+      - POSTGRES_USER=myprojectuser
+      - POSTGRES_PASSWORD=password

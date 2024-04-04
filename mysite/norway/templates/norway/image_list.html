@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 1080px; 
+        }
+
+        .image-container img {
+            width: 480px; 
+            height: auto; 
+        }
+    </style>
+</head>
+<body>
+    <h1>ประกาศจับสองแม่ลูกแรงงานไทยต่างแดนข้ามชาติ</h1>
+    
+    <div class="image-container">
+        <div>
+            <img src="{% static 'images/atm.jpg' %}" alt="ATM Image">
+        </div><br>
+        <div>
+            <img src="{% static 'images/italy.jpg' %}" alt="Italy Image">
+        </div>
+    </div>
+
+    <h2>เนื่องจากมีผู้ร้ายข้ามแดนมาจากประเทศนอร์เวย์ ซึ่งมีลักษณะทรงสก๊อยอพยพถิ่นฐานมาในประเทศไทย จึงขอความร่วมมือพี่น้องประชาชนระวังสองแม่ลูกสก๊อยที่เป็นภัยต่อความมั่นคงของประเทศ</h2>
+    <p>คนที่1: นางสาวสิริสกุล ใช้คำว่านางสาวเพราะยังไม่มีผัว ทำงานอยู่ที่เมืองนอกแต่ใจชอบเมืองไทยและใฝ่ฝันอยากเป็นสก๊อยสาว แต่แก่แล้ว</p>
+    <p>คนที่2: เด็กหญิง อภิชญา สก๊อยเด็กเริ่มต้นด้วยการคบเพื่อนไปเต้นหน้ารถแห่โรงเรียนบึงบูรพ์ กิจวรรตประจำวัน เต้นรถแห่และมักเด้าเสาอยู่เป็นประจำ ฉายาในวงการ คนอิตตาลี </p>
+</body>
+</html>
